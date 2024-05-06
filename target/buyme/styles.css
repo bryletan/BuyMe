@@ -1,0 +1,437 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  padding-left: 270px
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.sidebar ul li a:hover {
+  color: rgba(211, 211, 211, 0.692);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.button-center {
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.item-actions {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-button {
+  flex: 0 0 auto;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.button-space {
+  margin-right:10px;
+}
+
+.item-grid {
+  display: grid;
+}
+
+.item {
+  border-top: 0px solid #ccc;
+  border-left: 0px solid #ccc;
+  border-right: 0px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.item-row1 {
+  margin: 0;
+  color: rgb(0, 189, 0);
+  font-weight: bold;
+}
+
+.item-row2 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.item-row3 {
+  margin: 0;
+  display: inline;
+}
+
+.grayed-row3 {
+  margin: 0;
+  color: rgb(108, 108, 108);
+  display: inline;
+}
+
+.item-row4 {
+  margin: 0;
+  color: rgb(0, 189, 0);
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.bid-form-container {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subheader {
+  margin-bottom: 20px;
+}
+
+.input-container{
+  display: flex;
+  border-radius: 1px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-input-container{
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 1px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.input-container label {
+  margin-bottom: 5px;
+}
+
+.input-space{
+  margin-top: 5px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.profile-container {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.profile-container label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="password"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.support-grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+
+
+.support-container label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.support-container input[type="text"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.submit-button,
+.back-button {
+  padding: 8px 15px;
+  margin-right: 10px;
+}
+.choose-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.auction-form-container {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auction-form-container input[type="text"],
+.auction-form-container input[type="number"],
+.auction-form-container input[type="datetime-local"],
+.auction-form-container select {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.auction-form-container label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.search-form-container{
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.admin-form-container {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.admin-form-container input[type="text"],
+.admin-form-container input[type="password"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.search-form-container input[type="text"],
+.search-form-container select[name="cond"],
+.search-form-container select[name="size"],
+.search-form-container select[name="color"],
+.search-form-container select[name="sort_name"],
+.search-form-container select[name="sort_price"],
+.search-form-container select[name="sort_type"] {
+  width: 100%;
+  max-width: 360px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.search-form-container label{
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.history-form-container {
+  text-align: center;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.viewusers-form-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+}
+
+.viewusers-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start for a consistent layout */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensures container takes full width of its parent */
+}
+
+.viewusers-input-container form {
+  display: flex;
+  align-items: center; /* Ensure the label, input, and button are vertically aligned */
+  width: 100%; /* Full width to utilize space effectively */
+}
+
+.viewusers-input-container label {
+  margin-right: 10px; /* Space between label and input */
+}
+
+.viewusers-input-container input[type="number"],
+.in-line-search {
+  flex-grow: 1;
+  padding: 10px;
+  margin-bottom: 5px; /* Space below each input and button */
+  margin-right: 10px; 
+}
+
+.alert {
+  display: flex;
+  border-top: 0px solid #ccc;
+  border-left: 0px solid #ccc;
+  border-right: 0px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between
+}
+
+.alert-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-form {
+  margin: 0;
+}
+
+.alert-row1 {
+  margin: 0;
+  color: red;
+  font-weight: bold;
+}
+
+.alert-row2{
+  margin: 0;
+}
+
+.alert-row3{
+  margin: 0;
+  font-weight: bold;
+}
+
+.question{
+  border-top: 0px solid #ccc;
+  border-left: 0px solid #ccc;
+  border-right: 0px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.question-row1,
+.question-row3{
+  margin: 0;
+}
+
+.question-row2,
+.question-row4{
+  margin: 0;
+  font-weight: bold;
+}
+
+.center-refresh {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
